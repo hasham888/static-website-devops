@@ -1,113 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasham Tabbu - Romantic Wallpaper</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url('https://source.unsplash.com/1600x900/?romantic,flowers') no-repeat center center fixed;
-            background-size: cover;
-            overflow: hidden;
-            position: relative;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps World</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('https://source.unsplash.com/1600x900/?devops,technology,cloud') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
 
-        .content {
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            z-index: 10;
-        }
+    h1 {
+      font-size: 60px;
+      margin: 0;
+      color: #00ffcc;
+      text-shadow: 2px 2px 10px #000;
+    }
 
-        h1 {
-            font-size: 60px;
-            font-weight: bold;
-            color: red;  /* Added red color for Hasham & Tabbu */
-            animation: fadeIn 3s ease-in-out infinite;
-        }
+    p {
+      font-size: 24px;
+      margin-top: 10px;
+      color: #ffffff;
+      text-shadow: 1px 1px 5px #000;
+    }
 
-        .heart, .flower {
-            position: absolute;
-            font-size: 40px;
-            animation: move 10s linear infinite;
-            opacity: 0.8;
-        }
+    .icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
 
-        .heart {
-            color: red;
-        }
+    .icon {
+      position: absolute;
+      font-size: 30px;
+      animation: float 15s linear infinite;
+      opacity: 0.6;
+    }
 
-        .flower {
-            color: pink;
-        }
-
-        /* Heart movement */
-        .heart:nth-child(odd) {
-            animation-duration: 12s;
-        }
-
-        /* Flower movement */
-        .flower:nth-child(even) {
-            animation-duration: 15s;
-        }
-
-        @keyframes move {
-            0% {
-                top: -50px;
-                left: 50%;
-            }
-            50% {
-                top: 100vh;
-                left: 50%;
-            }
-            100% {
-                top: -50px;
-                left: 50%;
-            }
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-    </style>
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="content">
-        <h1>Hasham & Tabbu</h1>
-        <p>In the Garden of Love</p>
-    </div>
+  <h1>Welcome to DevOps World</h1>
+  <p>CI/CD | Automation | Cloud | Docker | Kubernetes | Terraform</p>
 
-    <!-- Adding hearts and flowers all over -->
-    <div class="heart" style="top: 20px; left: 30%;">❤️</div>
-    <div class="heart" style="top: 40px; left: 70%;">❤️</div>
-    <div class="heart" style="top: 60px; left: 50%;">❤️</div>
-    <div class="heart" style="top: 80px; left: 10%;">❤️</div>
-    <div class="heart" style="top: 100px; left: 80%;">❤️</div>
-
-    <div class="flower" style="top: 80px; left: 10%;">🌸</div>
-    <div class="flower" style="top: 100px; left: 50%;">🌸</div>
-    <div class="flower" style="top: 20px; left: 80%;">🌸</div>
-    <div class="flower" style="top: 60px; left: 30%;">🌸</div>
-    <div class="flower" style="top: 50px; left: 70%;">🌸</div>
-    <div class="flower" style="top: 40px; left: 20%;">🌸</div>
-    <div class="flower" style="top: 120px; left: 90%;">🌸</div>
-    <div class="flower" style="top: 150px; left: 40%;">🌸</div>
+  <div class="icons">
+    <!-- Random floating icons -->
+    <div class="icon" style="left: 10%;">🐳</div> <!-- Docker -->
+    <div class="icon" style="left: 20%; animation-delay: 2s;">☁️</div> <!-- Cloud -->
+    <div class="icon" style="left: 30%; animation-delay: 4s;">🔧</div> <!-- Tools -->
+    <div class="icon" style="left: 40%; animation-delay: 1s;">📦</div> <!-- Deployment -->
+    <div class="icon" style="left: 50%; animation-delay: 3s;">⚙️</div> <!-- Automation -->
+    <div class="icon" style="left: 60%; animation-delay: 5s;">🚀</div> <!-- CI/CD -->
+    <div class="icon" style="left: 70%; animation-delay: 2s;">🧪</div> <!-- Testing -->
+    <div class="icon" style="left: 80%; animation-delay: 4s;">📈</div> <!-- Monitoring -->
+  </div>
 
 </body>
 </html>
